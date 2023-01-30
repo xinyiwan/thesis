@@ -1,29 +1,28 @@
 \babel@toc {english}{}\relax
-\babel@toc {english}{}\relax
 \babel@toc {swedish}{}\relax
 \babel@toc {english}{}\relax
 \babel@toc {swedish}{}\relax
 \babel@toc {english}{}\relax
-\babel@toc {swedish}{}\relax
-\babel@toc {english}{}\relax
 \babel@toc {english}{}\relax
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Lots of stars (Inspired by Figure x.y on page z of [xxx])\relax }}{8}{figure.caption.55}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Ethernet data link layer protocol encapsulated into a IEEE~802.3 MAC packet\relax }}{9}{figure.caption.60}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces IPv4 datagram header}}{10}{figure.caption.61}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces IPv6 datagram header\relax }}{10}{figure.caption.62}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Lots of stars (Inspired by Figure x.y on page z of [xxx])\relax }}{6}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Ethernet data link layer protocol encapsulated into a IEEE~802.3 MAC packet\relax }}{7}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces IPv4 datagram header}}{8}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces IPv6 datagram header\relax }}{8}{figure.caption.22}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Research Process\relax }}{15}{figure.caption.78}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Research Process\relax }}{13}{figure.caption.38}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Homepage icon\relax }}{20}{figure.caption.111}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The processing of key-value extraction from a PDF document using Azure's Form Recognizer\relax }}{22}{figure.caption.119}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Hyper-V with containers\relax }}{23}{figure.caption.120}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Virtual machines (VMs) versus Containers\relax }}{23}{figure.caption.121}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Homepage icon\relax }}{18}{figure.caption.71}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The processing of key-value extraction from a PDF document using Azure's Form Recognizer\relax }}{20}{figure.caption.79}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Hyper-V with containers\relax }}{21}{figure.caption.80}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Virtual machines (VMs) versus Containers\relax }}{21}{figure.caption.81}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces A GNUplot figure}}{27}{figure.caption.131}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces A GNUplot figure}}{25}{figure.caption.91}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Fig.\textbf {a} shows the relationship among diffusion time, diffusion coefficient and displacement variance. ${T_d}$ is the time for molecules to diffuse. $D$ is diffusion coefficient, and <${x^2}$> is the variance of the molecular displacement along that dimension. For water at brain temperature, $68\%$ of molecules have moved within a sphere of $17 \mu s$ diameter in $50 ms$. Fig.\textbf {b} mimics biological tissues. Displacements could be constraint in a closed space (A). Diffusion might also be hindered by obstacles that result in tortuous pathways (B). Exchange between compartments also slows down molecular displacements (C) \blx@tocontentsinit {0}\cite {lebihanLookingFunctionalArchitecture2003}. \relax }}{34}{figure.caption.114}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces An example showing 3D pattern of diffusion in both free space and constraint space. Second row shows diffusion tensor imaging(DTI) of the according tensor model. $\lambda 1$, $\lambda 2$ and $\lambda 3$ in the tensor model are eigenvalues of diffusion matrix.\relax }}{35}{figure.caption.115}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Fiber ODFs reconstructed from the in vivo data for a voxel. Top left: an axial fractional anisotropy(FA) map just below the centrum semiovale. Top middle: a magnified section of the FA map, colored according to the anatomic direction of the major eigenvector of the diffusion tensor (red: left–right, green: anterior–posterior, blue: inferior–superior). Top right: the fiber ODF reconstructed from the highlighted voxel, displayed as a sagittal projection to highlight the presence of the two distinct fiber orientations. Bottom row: fiber ODFs for the same voxel reconstructed using each of the individual 60-direction data sets from data acquisition. Note that any negative lobes in the fiber ODF have been discarded. \blx@tocontentsinit {0}\cite *[]{tournierDirectEstimationFiber2004} \relax }}{37}{figure.caption.116}%
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Fiber tracking involves a numerical procedure to solve a first-order ordinary differential equation (ODE) whose parameters are specified by a starting location (i.e., the seeding point, black circle) and by the first derivative of a function (i.e., the resolved fiber orientation, arrows) at each voxel. The trajectory can then be calculated using the Euler method. However, the conventional ODE problem only considers numerical error due to finite step size and does not consider other error scenarios in fiber tracking. The first scenario that raises challenges for standard fiber tracking involves errors in the estimation of first derivatives, which can cause substantial deviation of trajectories from their ground truth. The second challenging scenario involves the boundary condition. Specifically, white matter tracts have termination locations, and fiber tracking may terminate at the wrong location, leading to a premature termination or an overshoot. The third challenging scenario involves the coexistence of multiple trajectories at the same voxel location. Inappropriately connecting unrelated trajectories may lead to incorrect streamline routing and spurious tracks. \blx@tocontentsinit {0}\cite *[]{yehTractographyMethodsFindings2021} \relax }}{38}{figure.caption.117}%

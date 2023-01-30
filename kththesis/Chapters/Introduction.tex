@@ -1,15 +1,40 @@
-\sweExpl{svensk: Introduktion}
+%================================================================
+%================================================================
+Diffusion magnetic resonance imaging(dMRI) is a powerful imaging modality 
+capable of inferring the local axonal structure in each imaging voxel 
+by exploiting the natural random movement of water molecules 
+in biological tissues \cite{intro}. Tractography is a set of algorithms aiming at 
+mapping the major neuronal pathways in the white matter of the brain from dMRI signals. 
+Based on the estimated direction of neuronal fibres from dMRI data, the tractogram of 
+the brain could be generated with tractography, which consists of numerous streamlines that 
+represent the microstructure of brain tissues. 
+According to its technical features, the tractography of dMRI could contribute to 
+the noninvasive investigation of brain connectivity and have potential in clinical research. 
 
+However, there are still concerns and challenges with tractography. 
+The anatomically implausible streamlines from tractography might influence 
+research results from tractogram, such as the analysis of brain connectivity. 
+To solve this problem, tractogram filtering methods have been developed to 
+remove faulty connections in a post-processing step \cite{hain2022assessing}.
 
-\sweExpl{Ofta kommer problemet och problemägaren från industrin där man önskar en specifik lösning på ett specifikt problem. Detta är ofta ”för smalt” definierat och ger ofta en ”för smal” lösning för att resultatet skall vara intressant ur ett mer allmänt ingenjörsperspektiv och med ”nya” erfarenheter som resultat. Fundera tillsammans med projektets intressenter (student, problemägare och akademi) hur man skulle kunna använda det aktuella problemet/förslaget för att undersöka någon ingenjörsaspekt och vars resultat kan ge ny eller kompletterande erfarenhet till ingenjörssamfundet och vetenskapen.\\slöser man en del eller hela delen av det ursprungliga problemet.\\Erfarenheten kommer ur en frågeställning som man i examensarbetet försöker besvara med tidigare och andras erfarenhet, egna eller modifierade metoder som ger ett resultat vilket kan användas för att diskutera ett svar på undersökningsfrågan.\\Detta stycke skall alltså, förutom det ursprungliga ”smala” problemet, innehålla  vad som skall undersökas för att skapa ny ingenjörserfarenhet och/eller vetenskap.}
+This project mainly analyses one of the tractogram filtering tools,
+\textit{Convex Optimization Modeling for Microstructure Informed Tractography}(COMMIT), 
+which aims at reestablishing the link between tractography and tissue microstructure \cite{daducci2014commit}. 
+First, the project aims to investigate the performance of COMMIT. 
+It is meant to explore the results from COMMIT when it faces streamlines with 
+different geometrical features. A dataset from ISMRA challenge\cite{maier_hein_klaus_2015_572345} 
+based on the ground-truth bundles will be used to generate different inputs of 
+COMMIT with known truth-positive, redundant, and false-positive streamlines.
 
-\engExpl{The first paragraph after a heading is not indented, all of the
-  subsequent paragraphs have their first line indented.}
-  
-This chapter describes the specific problem that this thesis addresses, the context of the problem, the
-goals of this thesis project, and outlines the structure of the thesis.\\
+Another problem with filtering methods is the inconsistent results from COMMIT, 
+which are sensitive to the size and composition of the surrounding tractogram. 
+Although the anatomical ground truth is absent, a pseudo ground truth could be 
+generalized from the partly consistent results of COMMIT. By applying COMMIT to 
+multiple tractogram subsets, consistent assessments for each streamline are extracted
+ as pseudo-ground truths. A deep-learning-based classifier trained by pseudo-ground truths
+  will be implemented to enhance the results to improve the plausibility of streamlines.
 
-\generalExpl{Give a general introduction to the area. (Remember to use appropriate references in this and all other sections.)}
+In the end, the classifier will be validated with connectivity maps between a healthy group and a group of brain diseases to compare the connectivity difference of both groups before and after using randomised COMMIT.
 
 % One can use either biblatex or bibtex - set as the option for the document at the top of this file
 \ifbiblatex
@@ -32,6 +57,18 @@ assume that \glspl{LAN} include \glspl{WLAN}, such as \gls{WiFi}.
 
 \section{Background}
 \label{sec:background}
+
+%================================================================
+%================================================================
+
+
+
+
+
+
+
+
+
 \sweExpl{svensk: Bakgrund}
 
 \generalExpl{Present the background for the area. Set the context for your project – so that your reader can understand both your project and this thesis. (Give detailed background information in Chapter 2 - together with related work.)
@@ -56,45 +93,5 @@ If possible, end this section with a question as a problem statement.
 % Research Question
 \subsection{Original problem and definition}
 \label{sec:researchQuestion}
-\sweExpl{Ursprungligt problem och definition}
-Some text
 
-\subsection{Scientific and engineering issues}\sweExpl{Vetenskaplig och ingenjörsmässig frågeställning}
-some text
-
-\section{Purpose}
-\sweExpl{Syfte}
-\sweExpl{Skilj på syfte och mål! Syfte är att förändra något till det bättre. I examensarbetet finns ofta två aspekter på detta. Dels vill problemägaren (företaget) få sitt problem löst till det bättre men akademin och ingenjörssamfundet vill också få nya erfarenheter och vetskap. Beskriv ett syfte som tillfredställer båda dessa aspekter.\\
-Det finns även ett syfte till som kan vara värt att beakta och det är att du som student skall ta examen och att du måste bevisa, i ditt examensarbete, att du uppfyller examensmålen. Dessa mål sammanfaller med kursmålen för examensarbetskursen. 
-}
-\generalExpl{State the purpose  of your thesis and the purpose of your degree project.\\
-Describe who benefits and how they benefit if you achieve your goals. Include anticipated ethical, sustainability, social issues, etc. related to your project. (Return to these in your reflections in Section~\ref{sec:reflections}.)}
-
-
-
-\section{Goals}
-\sweExpl{Mål}
-\sweExpl{Skilj på syfte och mål. Syftet är att åstakomma en förändring i något. Målen är vad som konkret skall göras för att om möjligt uppnå den önskade förändringen (syfte). }
-
-\generalExpl{State the goal/goals of this degree project.}
-
-The goal of this project is XXX. This has been divided into the following three sub-goals:
-\begin{enumerate}
-\item Subgoal 1 \sweExpl{för att tillfredsställa problemägaren – industrin?}
-\item Subgoal 2\sweExpl{för att tillfredsställa ingenjörssamfundet och vetenskapen – akademin) }
-\item Subgoal 3\sweExpl{eventuellt, för att uppfylla kursmålen – du som student}
-\end{enumerate}
-
-\generalExpl{In addition to presenting the goal(s), you might also state what the deliverables and results of the project are.}
-
-\section{Research Methodology}\sweExpl{Undersökningsmetod}
-\sweExpl{Här anger du vilken vilken övergripande undersökningsstrategi eller metod du skall använda för att försöka besvara den akademiska frågeställning och samtidigt lösa det e v ursprungliga problemet. Ofta kan man använda ”lösandet av ursprungsproblemet” som en fallstudie kring en akademisk frågeställning. Du undersöker någon intressant fråga i ”skarpt” läge och samlar resultat och erfarenhet ur detta.\\
-Tänk på att företaget ibland måste stå tillbaka i sin önskan och förväntan på projektets resultat till förmån för ny eller kompletterande ingenjörserfarenhet och vetenskap (ditt examensarbete). Det är du som student som bestämmer och löser fördelningen mellan dessa två intressen men se till att alla är informerade. }
-\generalExpl{Introduce your choice of methodology/methodologies and method/methods – and the reason why you chose them. Contrast them with and explain why you did not choose other methodologies or methods. (The details of the actual methodology and method you have chosen will be given in Chapter~\ref{ch:methods}. Note that in Chapter~\ref{ch:methods}, the focus could be research strategies, data collection, data analysis, and quality assurance.)\\
-In this section you should present your philosophical assumption(s), research method(s), and research approach(es).}
-
-\section{Delimitations}\sweExpl{Avgränsningar}
-\generalExpl{Describe the boundary/limits of your thesis project and what you are explicitly not going to do. This will help you bound your efforts – as you have clearly defined what is out of the scope of this thesis project. Explain the delimitations. These are all the things that could affect the study if they were examined and included in the degree project.}
-
-\section{Structure of the thesis}\sweExpl{ Rapportens disposition}
-Chapter~\ref{ch:background} presents relevant background information about xxx.  Chapter~\ref{ch:methods} presents the methodology and method used to solve the problem. …
+\subsection{Scientific and engineering issues}
